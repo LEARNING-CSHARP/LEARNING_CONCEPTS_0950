@@ -17,7 +17,7 @@
 			}
 
 			System.Console.WriteLine(person.Gender);
-			System.Console.WriteLine((int)person.Gender);
+			System.Console.WriteLine((byte)person.Gender);
 
 			switch (person.Marriage)
 			{
