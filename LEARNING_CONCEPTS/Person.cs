@@ -9,6 +9,7 @@
 		public string FullName;
 
 		public Enums.Gender Gender;
+
 		public Enums.Marriage Marriage;
 	}
 }
