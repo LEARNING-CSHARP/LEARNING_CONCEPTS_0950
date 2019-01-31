@@ -1,7 +1,11 @@
 ﻿namespace LEARNING_CONCEPTS
 {
-	class Program
+	internal static class Program
 	{
+		static Program()
+		{
+		}
+
 		static void Main(string[] args)
 		{
 			Person person = new Person();
@@ -39,21 +43,21 @@
 
 			File file = new File();
 
-			file.Size = 1234;
-			file.Name = "Somefile.txt";
-			file.Attribute = Enums.FileAttribute.Hidden;
-			file.Attribute = Enums.FileAttribute.Hidden | Enums.FileAttribute.System | Enums.FileAttribute.Archive;
+			file.Attribute = File.FileAttribute.Hidden;
 
-			if (file.Attribute == Enums.FileAttribute.Hidden)
+			file.Attribute =
+				File.FileAttribute.Hidden | File.FileAttribute.System | File.FileAttribute.Archive;
+
+			if (file.Attribute == File.FileAttribute.Hidden)
 			{
 			}
 
-			if ((file.Attribute & Enums.FileAttribute.Hidden) == Enums.FileAttribute.Hidden)
+			if ((file.Attribute & File.FileAttribute.Hidden) == File.FileAttribute.Hidden)
 			{
 			}
 
-			if ((file.Attribute & (Enums.FileAttribute.Hidden | Enums.FileAttribute.System)) ==
-				(Enums.FileAttribute.Hidden | Enums.FileAttribute.System))
+			if ((file.Attribute & (File.FileAttribute.Hidden | File.FileAttribute.System)) ==
+				(File.FileAttribute.Hidden | File.FileAttribute.System))
 			{
 			}
 
