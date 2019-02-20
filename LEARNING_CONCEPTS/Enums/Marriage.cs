@@ -2,8 +2,8 @@
 {
 	public enum Marriage : byte
 	{
-		Single,
-		Married,
-		Divorced,
+		Single = 0,
+		Married = 1,
+		Divorced = 2,
 	}
 }
