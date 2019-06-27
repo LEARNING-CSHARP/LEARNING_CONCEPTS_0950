@@ -2,15 +2,6 @@
 {
 	public class File
 	{
-		public enum FileAttribute : byte
-		{
-			System = 1,
-			Hidden = 2,
-			Archive = 4,
-			Compress = 8,
-			ReadOnly = 16,
-		}
-
 		public File()
 		{
 		}
@@ -19,6 +10,6 @@
 
 		public string Name;
 
-		public FileAttribute Attribute;
+		public Enums.FileAttributes Attributes;
 	}
 }

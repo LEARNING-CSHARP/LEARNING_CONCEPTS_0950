@@ -43,21 +43,21 @@
 
 			File file = new File();
 
-			file.Attribute = File.FileAttribute.Hidden;
+			file.Attributes = Enums.FileAttributes.System;
 
-			file.Attribute =
-				File.FileAttribute.Hidden | File.FileAttribute.System | File.FileAttribute.Archive;
+			file.Attributes =
+				Enums.FileAttributes.Hidden | Enums.FileAttributes.System | Enums.FileAttributes.Archive;
 
-			if (file.Attribute == File.FileAttribute.Hidden)
+			if (file.Attributes == Enums.FileAttributes.System)
 			{
 			}
 
-			if ((file.Attribute & File.FileAttribute.Hidden) == File.FileAttribute.Hidden)
+			if ((file.Attributes & Enums.FileAttributes.System) == Enums.FileAttributes.System)
 			{
 			}
 
-			if ((file.Attribute & (File.FileAttribute.Hidden | File.FileAttribute.System)) ==
-				(File.FileAttribute.Hidden | File.FileAttribute.System))
+			if ((file.Attributes & (Enums.FileAttributes.Hidden | Enums.FileAttributes.System)) ==
+				(Enums.FileAttributes.Hidden | Enums.FileAttributes.System))
 			{
 			}
 

@@ -38,6 +38,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\FileAttributes.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\Marriage.cs" />
     <Compile Include="File.cs" />
