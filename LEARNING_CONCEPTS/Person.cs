@@ -6,10 +6,10 @@
 		{
 		}
 
-		public string FullName;
+		public string FullName { get; set; }
 
-		public Enums.Gender Gender;
+		public Enums.Gender Gender { get; set; }
 
-		public Enums.Marriage Marriage;
+		public Enums.Marriage Marriage { get; set; }
 	}
 }

@@ -6,10 +6,10 @@
 		{
 		}
 
-		public int Size;
+		public int Size { get; set; }
 
-		public string Name;
+		public string Name { get; set; }
 
-		public Enums.FileAttributes Attributes;
+		public Enums.FileAttributes Attributes { get; set; }
 	}
 }
